@@ -2,10 +2,10 @@ package private_go_module
 
 import "fmt"
 
-func TestPrivateGoModule() string {
-	return "Test"
+func TestPrivateGoModule(params string) string {
+	return "Test" + params
 }
 
 func PrintTestGoModule() {
-	fmt.Println(TestPrivateGoModule())
+	fmt.Println(TestPrivateGoModule("Params"))
 }
